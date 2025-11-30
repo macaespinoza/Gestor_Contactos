@@ -1,0 +1,4 @@
+3|Macarena Espinoza G.|+56988899906|macarena.espinoza@email.com
+5|César Osses|+56922222222|cesar.osses@email.com
+6|Kathy Alderete|+56933333333|kathy.alderete@email.com
+7|Andrea Gatica|+56912345678|andrea.gatica@email.com
