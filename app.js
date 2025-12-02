@@ -11,7 +11,7 @@ const methodOverride = require("method-override")
 const { engine } = require("express-handlebars")
 
 const app = express()
-const PORT = 3000
+const PORT = process.env.PORT || 3000
 
 app.engine("handlebars", engine({
     extname: ".handlebars",

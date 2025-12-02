@@ -60,3 +60,42 @@ Los contactos se almacenan en `data/contactos.txt` con el formato:
 ```
 id|nombre|telefono|email
 ```
+
+## Despliegue en Railway
+
+### Requisitos previos
+- Cuenta en [Railway](https://railway.app/)
+- Repositorio en GitHub con el código
+
+### Pasos para desplegar
+
+1. **Conectar con Railway**
+   - Ingresa a [Railway](https://railway.app/)
+   - Haz clic en "Start a New Project"
+   - Selecciona "Deploy from GitHub repo"
+   - Autoriza Railway para acceder a tu repositorio
+
+2. **Configuración del proyecto**
+   - Selecciona el repositorio `Gestor_Contactos`
+   - Railway detectará automáticamente que es un proyecto Node.js
+   - El archivo `railway.json` ya contiene la configuración necesaria
+
+3. **Variables de entorno (opcional)**
+   - La aplicación usa el puerto proporcionado por Railway automáticamente
+   - No se requieren variables de entorno adicionales para el funcionamiento básico
+
+4. **Desplegar**
+   - Railway iniciará el build y deployment automáticamente
+   - Una vez completado, obtendrás una URL pública para tu aplicación
+
+### Notas importantes
+
+- La aplicación usa almacenamiento en archivo de texto (`data/contactos.txt`)
+- Los datos se perderán al reiniciar el contenedor en Railway
+- Para persistencia de datos en producción, considera usar una base de datos
+
+### URL de la aplicación
+Una vez desplegada, Railway te proporcionará una URL similar a:
+```
+https://tu-proyecto.up.railway.app
+```
